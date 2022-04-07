@@ -51,9 +51,9 @@ async function testAsyncWait()
         let result = await promiseAsync; // wait until the promise resolves (*)
         console.log("Async: Yay! Promise resolved with response: " + result)
     }
-    catch (result)
+    catch (error)
     {
-        console.log("Async: Boo. Promise rejected with response: " + result)
+        console.log("Async: Boo. Promise rejected with response: " + error)
     }
 }
 
